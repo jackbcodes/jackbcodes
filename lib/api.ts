@@ -5,14 +5,19 @@ import matter from 'gray-matter'
 const postsDirectory = join(process.cwd(), '_posts')
 
 export function getPostSlugs() {
+  // file name of all in _posts
   return fs.readdirSync(postsDirectory)
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
+
+  // raw text of file
   const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const { data, content } = matter(fileContents)
+  
+  // gray-matter takes what is in top of md file (front matter) and parses it into an object
+  const { data, content } = matter(fileContents)  
 
   type Items = {
     [key: string]: string
@@ -33,6 +38,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
       items[field] = data[field]
     }
   })
+
 
   return items
 }
