@@ -164,8 +164,8 @@ export default function Post({ post, morePosts, preview }: Props) {
                     Sign up to my newsletter
                   </h2>
                   <p className='mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400'>
-                    Found this useful? Subscribe to follow along with my software engineering journey and receive email
-                    notifications when I publish.
+                    Did you find this useful? Subscribe to stay in the loop and receive email notifications when I post
+                    something new.
                   </p>
                   <SubscribeInput />
                 </div>
