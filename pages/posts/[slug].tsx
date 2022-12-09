@@ -159,7 +159,7 @@ export default function Post({ post, morePosts, preview }: Props) {
 
             <section className='bg-white dark:bg-gray-900 mt-6'>
               <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-                <div className='mx-auto max-w-screen-md sm:text-center'>
+                <div className='mx-auto max-w-screen-md text-center'>
                   <h2 className='mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white'>
                     Sign up to my newsletter
                   </h2>
