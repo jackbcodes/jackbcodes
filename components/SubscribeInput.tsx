@@ -108,11 +108,7 @@ const SubscribeInput = () => {
         </div>
 
         <div className='mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-400'>
-          I care about the protection of your data.{' '}
-          <a href='#' className='font-medium text-primary-600 dark:text-primary-500 hover:underline'>
-            Read my Privacy Policy
-          </a>
-          .
+          I send a newsletter every week on Saturday. No more, no less.
         </div>
       </form>
     </>
