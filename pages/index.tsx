@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Post from '../interfaces/post'
 import { getAllPosts } from '../lib/api'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import PostSummary from '../components/PostSummary'
 import SubscribeInput from '../components/SubscribeInput'
 
@@ -30,7 +30,13 @@ export default function Index({ allPosts }: Props) {
           </div>
           <div className='grid gap-8 lg:grid-cols-2'>
             {allPosts.map((post) => (
-              <PostSummary title={post.title} date={post.date} slug={post.slug} excerpt={post.excerpt} />
+              <PostSummary
+                title={post.title}
+                date={post.date}
+                slug={post.slug}
+                excerpt={post.excerpt}
+                type={post.type}
+              />
             ))}
           </div>
         </div>
@@ -40,7 +46,7 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt'])
+  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt', 'type'])
 
   return {
     props: { allPosts },
