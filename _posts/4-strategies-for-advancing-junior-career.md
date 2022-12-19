@@ -3,6 +3,8 @@ title: '4 Proven Strategies for Advancing Your Career as a Junior Software Devel
 excerpt: "The world of a Junior Developer can be daunting. You may have moments where you think everyone around you is some sort of coding wizard and you'll never be as good as them. These are 4 strategies I ensure will help you advance your career to make you just as good, if not better."
 date: '2022-12-19T11:20:00.00Z'
 type: 'Article'
+ogImage:
+  url: '/assets/blog/4-strategies-for-advancing-junior-career/ogImage.png'
 ---
 
 I started my frontend development career in July 2020 as a Junior Developer with little to no coding experience. I knew what a div was and that was about it… genuinely.
