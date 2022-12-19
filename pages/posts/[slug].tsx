@@ -35,7 +35,7 @@ export default function Post({ post, morePosts, preview }: Props) {
           <article className='container mx-auto px-5 mb-32'>
             <Head>
               <title>{title}</title>
-              <meta property='og:image' content={post.ogImage.url} />
+              {/* <meta property='og:image' content={post.ogImage.url} /> */}
             </Head>
             <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
               <div className='mx-auto w-full max-w-2xl'>
