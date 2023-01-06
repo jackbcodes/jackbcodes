@@ -108,7 +108,7 @@ const SubscribeInput = () => {
         </div>
 
         <div className='mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-400'>
-          I send out a newsletter every other week on Saturdays. No more, no less.
+          I send out a newsletter every other week on Mondays. No more, no less.
         </div>
       </form>
     </>
